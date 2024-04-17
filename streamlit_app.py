@@ -38,3 +38,30 @@ st.altair_chart(alt.Chart(df, height=700, width=700)
         color=alt.Color("idx", legend=None, scale=alt.Scale()),
         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
     ))
+
+
+# Libraries:
+import matplotlib.pyplot as plt
+
+import matplotlib
+from matplotlib import pyplot as plt
+
+import pandas as pd
+
+import seaborn as sns
+
+import scipy
+
+import numpy as np
+
+import warnings
+warnings.filterwarnings(action = 'ignore')
+
+df_iris = pd.read_csv('Iris.csv')
+df_iris
+
+# Heatmap
+
+sns.heatmap(data = df_iris.corr(), annot = True, cmap = 'copper', linewidths = 2)
+
+plt.show()df_iris
