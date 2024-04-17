@@ -1,4 +1,6 @@
 import pandas as pd
+import seaborn as sns
+
 
 df_iris = pd.read_csv('Iris.csv')
 df_iris
