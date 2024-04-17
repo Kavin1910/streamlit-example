@@ -64,4 +64,4 @@ df_iris
 
 sns.heatmap(data = df_iris.corr(), annot = True, cmap = 'copper', linewidths = 2)
 
-plt.show()df_iris
+plt.show()
